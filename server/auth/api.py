@@ -1,8 +1,8 @@
-from comm.db import get_db_auto_close
-from comm.model import TbMember, UserBase
+from server.comm.db import get_db_auto_close
+from server.comm.model import TbMember, UserBase
 from fastapi import APIRouter, Depends, HTTPException, status
 from sqlalchemy.orm import Session
-from utils.func import ResponseHandler
+from server.utils.func import ResponseHandler
 
 router = APIRouter(prefix="/auth")
 

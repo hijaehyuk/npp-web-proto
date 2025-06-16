@@ -1,10 +1,10 @@
 import json
 
 import requests
-from comm.db import get_db_auto_close
+from server.comm.db import get_db_auto_close
 from fastapi import APIRouter, Depends, HTTPException, status
 from sqlalchemy.orm import Session
-from utils.func import ResponseHandler
+from server.utils.func import ResponseHandler
 
 router = APIRouter(prefix="/content")
 
